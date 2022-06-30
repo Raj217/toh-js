@@ -84,7 +84,8 @@ a {
     background-color: #D6A2E8;
     color: black;
 }
-a:visited{
+a:visited,
+a:focus {
     color: black;
 }
 a:hover {
