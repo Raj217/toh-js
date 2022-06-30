@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Tower Of Hanoi</title>
+</head>
+<body>
+    <div id="toh-card">
+        <div class="title">Tower Of Hanoi</div>
+        <div class="tower" id="tower1">
+            <div class="head"></div>
+            <div class="base"></div>
+            <h2 class="tower-name">A</h2>
+        </div>
+        <div class="tower" id="tower2">
+            <div class="head"></div>
+            <div class="base"></div>
+            <h2 class="tower-name">B</h2>
+        </div>
+        <div class="tower" id="tower3">
+            <div class="head"></div>
+            <div class="base"></div>
+            <h2 class="tower-name">C</h2>
+        </div>
+    </div>
+    <div id="settings-card">
+        <a href="" id="reset">Reset</a>
+        <a href="#" id="solve">Solve</a>
+        <div class="slider">
+            <p>Speed: </p>
+            <input type="range" min="1" max="100" value="50" class="slider-range" id="speed">
+        </div>
+        <div class="rings">
+            <p>Rings:</p>
+            <input type="number" value="3", min="1" max="5" id="disc-count">
+        </div>
+        
+    </div>
+    <script src="classes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
